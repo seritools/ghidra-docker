@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ghidra</Name>
+  <Repository>seritools/ghidra</Repository>
+  <Registry>https://hub.docker.com/r/seritools/ghidra/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/seritools/ghidra/</Support>
+  <Project/>
+  <Overview>   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1607621453</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>13100</HostPort>
+        <ContainerPort>13100</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>13101</HostPort>
+        <ContainerPort>13101</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>13102</HostPort>
+        <ContainerPort>13102</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/repos</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Port 1" Target="13100" Default="13100" Mode="tcp" Description="Container Port: 13100" Type="Port" Display="always" Required="true" Mask="false">13100</Config>
+  <Config Name="Port 2" Target="13101" Default="13101" Mode="tcp" Description="Container Port: 13101" Type="Port" Display="always" Required="true" Mask="false">13101</Config>
+  <Config Name="Port 3" Target="13102" Default="13102" Mode="tcp" Description="Container Port: 13102" Type="Port" Display="always" Required="true" Mask="false">13102</Config>
+  <Config Name="Repository path" Target="/repos" Default="/mnt/user/appdata/ghidra/repos/" Mode="rw" Description="Container Path: /repos" Type="Path" Display="always" Required="true" Mask="false"/>
+</Container>
