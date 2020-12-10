@@ -14,10 +14,10 @@
   <WebUI/>
   <TemplateURL/>
   <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>-it</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1607621453</DateInstalled>
+  <DateInstalled>1607625342</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
@@ -43,7 +43,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir/>
+      <HostDir>/mnt/user/appdata/ghidra/repos/</HostDir>
       <ContainerDir>/repos</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -53,5 +53,5 @@
   <Config Name="Port 1" Target="13100" Default="13100" Mode="tcp" Description="Container Port: 13100" Type="Port" Display="always" Required="true" Mask="false">13100</Config>
   <Config Name="Port 2" Target="13101" Default="13101" Mode="tcp" Description="Container Port: 13101" Type="Port" Display="always" Required="true" Mask="false">13101</Config>
   <Config Name="Port 3" Target="13102" Default="13102" Mode="tcp" Description="Container Port: 13102" Type="Port" Display="always" Required="true" Mask="false">13102</Config>
-  <Config Name="Repository path" Target="/repos" Default="/mnt/user/appdata/ghidra/repos/" Mode="rw" Description="Container Path: /repos" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Repository path" Target="/repos" Default="/mnt/user/appdata/ghidra/repos/" Mode="rw" Description="Container Path: /repos" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/ghidra/repos/</Config>
 </Container>

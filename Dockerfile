@@ -11,11 +11,11 @@ RUN apt-get update && apt-get install --no-install-recommends -y wget  unzip \
   && chmod +x /ghidra/ghidraRun \
   && apt-get purge -y --auto-remove wget unzip \
   && apt-get clean \
-  && rm -rf /var/lib/apt/lists/* /var/cache/apt/archives /tmp/* /var/tmp/* /ghidra/docs
+  && rm -rf /var/lib/apt/lists/* /var/cache/apt/archives /tmp/* /var/tmp/* /ghidra/docs \
+  && rm -f /ghidra/server/server.conf \
+  && ln -s /repos/server.conf /ghidra/server/server.conf
 
 VOLUME [ "/repos" ]
-
-COPY server.conf /ghidra/server/server.conf
 
 EXPOSE 13100 13101 13102
 ENTRYPOINT ["/ghidra/server/ghidraSvr", "console"]
