@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/seritools/ghidra/</Registry>
   <Network>bridge</Network>
   <MyIP/>
-  <Shell>sh</Shell>
+  <Shell>bash</Shell>
   <Privileged>false</Privileged>
   <Support>https://hub.docker.com/r/seritools/ghidra/</Support>
   <Project/>
@@ -17,7 +17,7 @@
   <ExtraParams>-it</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1607625342</DateInstalled>
+  <DateInstalled>1607629266</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
