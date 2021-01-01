@@ -1,10 +1,10 @@
 FROM openjdk:15-jdk-slim
 
-ENV VERSION 9.2.1_PUBLIC
-ENV GHIDRA_SHA cfaeb2b5938dec90388e936f63600ad345d41b509ffed4727142ba9ed44cb5e8
+ENV VERSION 9.3_DEV
+ENV GHIDRA_SHA 1328fa9fe8eb272ec966b8f1abc1ae4b5d380380afc0c330564b34e3e419d442
 
 RUN apt-get update && apt-get install --no-install-recommends -y wget  unzip \
-  && wget --progress=bar:force -O /tmp/ghidra.zip https://ghidra-sre.org/ghidra_9.2.1_PUBLIC_20201215.zip \
+  && wget --progress=bar:force -O /tmp/ghidra.zip https://github.com/roblabla/ghidra-ci/releases/download/2020-12-31/release.zip \
   && echo "$GHIDRA_SHA /tmp/ghidra.zip" | sha256sum -c - \
   && unzip /tmp/ghidra.zip \
   && mv ghidra_${VERSION} /ghidra \

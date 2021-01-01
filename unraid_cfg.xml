@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>ghidra</Name>
-  <Repository>seritools/ghidra</Repository>
+  <Repository>seritools/ghidra:dev</Repository>
   <Registry>https://hub.docker.com/r/seritools/ghidra/</Registry>
   <Network>bridge</Network>
   <MyIP/>
